@@ -1,0 +1,42 @@
+# ============================================================
+# PhysioAI Pro V2 - Backend Dependencies
+# ============================================================
+# Core framework and realtime infrastructure for AI-powered
+# physiotherapy posture tracking system.
+# ============================================================
+
+# --- Core Framework ---
+fastapi==0.115.12              # High-performance async web framework
+uvicorn[standard]==0.34.3      # ASGI server with uvloop + httptools
+python-dotenv==1.1.0           # Environment variable management
+
+# --- Data Validation ---
+pydantic==2.11.2               # Data validation with type hints
+pydantic-settings==2.9.1       # Settings management via .env
+
+# --- WebSocket & Async ---
+websockets==15.0.1             # WebSocket protocol implementation
+asyncio-throttle==1.0.2        # Rate limiting for async operations
+
+# --- Logging & Monitoring ---
+structlog==25.3.0              # Structured logging for production
+rich==14.0.0                   # Rich terminal output for dev mode
+
+# --- CORS & HTTP ---
+starlette==0.46.2              # ASGI toolkit (ships with FastAPI)
+
+# --- Image Processing (for frame validation) ---
+Pillow==11.2.1                 # Image validation and processing
+
+# --- AI Engine Preparation (install when ready) ---
+# mediapipe==0.10.21           # Google MediaPipe for pose estimation
+# numpy==2.2.6                 # Numerical computing for AI pipeline
+# opencv-python==4.11.0.86     # Computer vision processing
+
+# --- Testing ---
+pytest==8.4.0                  # Testing framework
+pytest-asyncio==1.0.0          # Async test support
+httpx==0.28.1                  # Async HTTP client for testing
+
+# --- Development ---
+watchfiles==1.0.5              # File watcher for auto-reload
